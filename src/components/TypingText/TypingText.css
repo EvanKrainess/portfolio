@@ -1,0 +1,22 @@
+.typing-text{
+    font-weight: bold;
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1ch;
+    color: black;
+  }
+  
+  .cursor.blinking {
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
