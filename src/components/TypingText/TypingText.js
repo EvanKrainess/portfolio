@@ -8,13 +8,11 @@ export default function TypingText({ texts }) {
 
     useEffect(() => {
         let isCancelled = false;
-        console.log(texts);
 
         const runTyping = async () => {
             for (let i = 0; i < texts.length-1; i++) {
                 if (isCancelled) return;
 
-                console.log("Typing text: ", texts[i]);
                 await typeText(texts[i]);
                 await new Promise(res => setTimeout(res, 1000)); 
                 await deleteText();
@@ -37,8 +35,6 @@ export default function TypingText({ texts }) {
             let index = 0;
             let currentText = ''; 
             let id = setInterval(() => {
-                console.log(text[index], index);
-                console.log(displayedText)
                 currentText += text[index];
                 setDisplayedText(currentText);
                 index++;

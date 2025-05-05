@@ -1,12 +1,14 @@
 import HeaderItem from '../HeaderItem/HeaderItem.js'
+import './Header.css';
 
 export default function Header(){
     return(
         <div className="Header">
-
-            <HeaderItem></HeaderItem>
-          
+            <HeaderItem altText={'LinkedIn'} link={'https://www.linkedin.com/in/evan-krainess/'} imagePath={'/images/LI-In-Bug.png'}></HeaderItem>
+            <HeaderItem altText={'GitHub'} link={'https://github.com/EvanKrainess'} imagePath={'/images/github-mark.png'}></HeaderItem>
+            <a href="mailto:krainessevan@gmail.com">
+                <img src="/images/mail.png" alt="Email Evan" style={{ width: '30px', height: '100%' }} />
+            </a>
         </div>
-    );
-
+    );   
 }
