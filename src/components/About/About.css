@@ -1,0 +1,27 @@
+
+.about-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:2rem;
+}
+
+
+
+.about-section img{
+    border-radius: 50%;
+    width:15rem;
+    height:15rem
+}
+
+
+.about-section p{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+

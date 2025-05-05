@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import TypingText from './components/TypingText/TypingText';
 import Header from './components/Header/Header'
+import About from './components/About/About'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div className="Text">
         <TypingText texts={["Hello!","Welcome to my website!", "I'm Evan Krainess!"]} />
       </div>
+      <About></About>
     </div>
   );
 }
