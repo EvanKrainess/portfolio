@@ -3,6 +3,7 @@ import React from 'react';
 import TypingText from './components/TypingText/TypingText';
 import Header from './components/Header/Header'
 import About from './components/About/About'
+import Experience from './components/Experience/Experience'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <TypingText texts={["Hello!","Welcome to my website!", "I'm Evan Krainess!"]} />
       </div>
       <About></About>
+      <Experience></Experience>
     </div>
   );
 }
